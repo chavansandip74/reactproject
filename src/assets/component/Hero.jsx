@@ -25,7 +25,7 @@ export default function Hero() {
 						</div>
 						<div className="col-lg-6 col-md-6">
 							<div className="banner-images">
-								<img src="src/assets/img/sandip.jpg" className='rounded' alt=""/>
+								<img src="public/img/sandip.jpg" className='rounded' alt=""/>
 							</div>
 						</div>
 					</div>
