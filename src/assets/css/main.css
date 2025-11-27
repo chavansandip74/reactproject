@@ -1,36 +1,4 @@
-/***************************************
-========================================
 
-	Author Name   : Themeplaza
-	This is HTML5 template
-	Template Name : Roton Personal Portfolio Template
-	Version: 1.0
-	
-****************************************
-=======================================/
-
-
-/* ----------------------------------------------------------------
-
- ==> Table Of Content
-
-	01. Default
-	02. Header
-	03. Banner
-	04. About
-	05. Service
-	06. Portfolio 
-	07. Resume
-	08. Testimonial
-	09. Blog
-	10. Contact
-	11. Footer
- 
-
----------------------------------------------------------------- */
-/* ==========================================================================
-01. Start Default CSS Area
-========================================================================== */
 html{
 	overflow-x: hidden;
 }
@@ -128,7 +96,7 @@ ul li, ol li{
 
 .preloader .loader .loader-outter {
   position: absolute;
-  border: 4px solid #08d665;
+  border: 4px solid #d67608;
   border-left-color: transparent;
   border-bottom: 0;
   width: 100%;
@@ -140,7 +108,7 @@ ul li, ol li{
 
 .preloader .loader .loader-inner {
   position: absolute;
-  border: 4px solid #08d665;
+  border: 4px solid #d66b08;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -161,7 +129,7 @@ ul li, ol li{
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: #08d665;
+  color: #d66b08;
   font-size: 25px;
   font-weight: 700;
 }
@@ -289,7 +257,7 @@ ul li, ol li{
 	color: #fff;
 }
 .section-title span{
-	color: #08d665;
+	color: #d66b08;
 }
 .btn{
     font-size: 14px;
@@ -326,7 +294,7 @@ ul li, ol li{
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
     display: inline-block;
-	background-color: #08d665;
+	background-color: #d67d08;
 	position: relative;
 	z-index: 1;
 }
@@ -334,16 +302,16 @@ button:focus{
 	outline: none !important;
 }
 .btn.btn-secondary{
-    background: #08d665;
-    border-color: #08d665;
+    background: #d69f08;
+    border-color: #d68408;
     color: #fff;
 }
 .btn.btn-secondary:hover{
     box-shadow: 1px 5px 12px rgba(0,0,0, 0.15);
 }
 .btn-secondary.banner_btn{
-    background: #08d665;
-    border-color: #08d665;
+    background: #d67608;
+    border-color: #d66b08;
 	color: #fff;
     text-transform: capitalize;
     margin-top: 30px;
@@ -408,13 +376,11 @@ a.back-to-top:hover, a.back-to-top:focus{
 /* ==========================================================================
 02. Start Header Area
 ========================================================================== */
-.navbar{
-    padding: 15px 0;
-}
+
 .navbar-brand p{
     font-size: 32px;
 	text-transform: uppercase;
-    color: #08d665;
+    color: #d67d08;
     font-weight: 700;
 }
 .bg-faded{
@@ -445,7 +411,7 @@ a.back-to-top:hover, a.back-to-top:focus{
 }
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover{
-	color: #08d665 !important;
+	color: #d68e08 !important;
 }
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
@@ -461,8 +427,8 @@ a.back-to-top:hover, a.back-to-top:focus{
 	float: right;
 	margin: 14px;
 	cursor: pointer;
-    background-color: #08d665;
-	border-color: #08d665;
+    background-color: #d67d08;
+	border-color: #d66b08;
 	border-radius: 0;
 }
 .navbar-light .navbar-toggler-icon{
@@ -588,7 +554,7 @@ a.back-to-top:hover, a.back-to-top:focus{
 }
 .about-image img{
     border-radius: 0px;
-	border: 10px solid #08d665;
+	border: 10px solid #d68e08;
 	padding: 8px 8px 8px 8px;
     margin-top: 25px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
@@ -604,7 +570,7 @@ a.back-to-top:hover, a.back-to-top:focus{
 }
 .about-content h3 span{
 	margin-left: 10px;
-	color: #08d665;
+	color: #d69508;
 }
 .dark_bg .about-content p{
 	color: #fff;
@@ -730,8 +696,8 @@ a.back-to-top:hover, a.back-to-top:focus{
     padding-bottom: 30px;
 }
 .controls .active{
-	color: #08d665 !important;
-	border-color: #08d665;
+	color: #d6a608 !important;
+	border-color: #d69f08;
 	background: transparent;
 }
 .controls .btn{
@@ -765,7 +731,7 @@ a.back-to-top:hover, a.back-to-top:focus{
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #08d665;
+	background: #d68408;
 	opacity: 0;
 	-webkit-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
@@ -853,7 +819,7 @@ Start FunFacts CSS
     margin-bottom: -4px;
     font-size: 45px;
     font-weight: 600;
-    color: #08d665;
+    color: #d67d08;
     font-size: 38px;
 }
 .funfact h3 .odometer{
@@ -892,7 +858,7 @@ Start FunFacts CSS
 	margin-bottom: 30px;
 }
 .blog-thumb small {
-	color: #08d665;
+	color: #d68e08;
 	font-weight: 500;
 	display: block;
 }
@@ -926,7 +892,7 @@ Start FunFacts CSS
 	color: #fff;
 }
 .single_blog:hover .blog-thumb h4{
-	color: #08d665;
+	color: #d69508;
 }
 .blog-info{
 	box-shadow: 0 1px 30px rgba(255, 255, 255, 0.2);
@@ -973,7 +939,7 @@ Start FunFacts CSS
 	color: #fff;
 	box-shadow: none;
 	outline: none;
-	border-color: #08d665;
+	border-color: #d6a608;
 }
 .contact-form-area{
 	background: transparent;
@@ -1017,7 +983,7 @@ Start FunFacts CSS
 	color: #fff;
 }
 .footer-right-contact .contact-icon{
-	background: #08d665;
+	background: #d68e08;
 	color: #fff;
 	border-radius: 50%;
 	font-size: 20px;

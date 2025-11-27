@@ -1,78 +1,96 @@
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import "./Contact.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Contact() {
-  return (
-    <div>
-      	<section id="contact" className="gray_bg section-padding">      
+	useEffect(() => {
+		AOS.init();
+	  }, []);
+
+	return (
+		<div>
+			<section id="contact" className="gray_bg section-padding">
 				<div className="contact-form">
 					<div className="container">
-						<h2 className="section-title wow flipInX" data-wow-delay="0.4s">Contact <span>Us</span></h2>      
-						<div className="row contact-form-area">   												
-							<div className="col-md-6 col-lg-6 col-sm-12">
-								<div className="contact_form wow fadeInLeft">
-									<form action="" method="post" id="main_contact_form">
-										<div className="contact_input_area">
-											<div id="success_fail_info"></div>
-											<div className="row">
-												<div className="col-12">
-													<div className="form-group">
-														<input type="text" name="name" className="form-control" placeholder="Name" required="required"/>
-													</div>
-												</div>
-												<div className="col-12 col-lg-6">
-													<div className="form-group">
-														<input type="email" name="email" className="form-control" placeholder="Email" required="required"/>
-													</div>
-												</div>
-												<div className="col-12 col-lg-6">
-													<div className="form-group">
-														<input type="text" name="subject" className="form-control" placeholder="Subject" required="required"/>
-													</div>
-												</div>
-												<div className="col-12">
-													<div className="form-group">
-														<textarea rows="6" name="message" className="form-control" placeholder="Your Message" required="required"></textarea>
-													</div>
-												</div>
-												<div className="col-12 text-center">
-													<button type="submit" value="Send message" name="submit" id="submitButton" className="btn btn-secondary ct_btn" title="Submit Your Message!">Send Message</button>
-												</div>
-											</div>
-										</div>
+						<h2 className="section-title wow flipInX mb-0" data-wow-delay="0.4s">Contact <span>Us</span></h2>
+						<div className="row contact-form-area">
+							<div className="col-md-6 col-lg-6 col-sm-12 " data-aos="fade-down-right">
+								<div className="contact_form wow fadeInLeft sdo">
+									<form className="form" action="https://api.web3forms.com/submit" method="POST">
+									<input type="hidden" name="access_key" value="88e60982-47c1-464f-9c8f-b5cf9cc10835"></input>
+
+										<h3 className='contactcard-title text-center'>FILL UP</h3>
+										<input placeholder="Enter your name" name='name' className="input" type="text"></input>
+										<input placeholder="Enter your email" name='email' className="input" type="text"></input>
+										<input placeholder="Enter your Mobile Number" name='mobile' className="input" type="text"></input>
+
+										<textarea placeholder="Massage" name='message' className="input" rows={5}></textarea>
+
+										<button>Submit</button>
 									</form>
+
 								</div>
 							</div>
-							<div className="col-md-6 col-lg-6 col-sm-12">
-								<div className="footer-right-area wow fadeInRight">
-									<h4>Contact Address</h4>
-									<div className="footer-right-contact">
-										<div className="single-contact">
-											<div className="contact-icon">
-											  <i className="fa fa-map-marker"></i>
-											</div>
-											<p>East London, England</p>
+
+							<div className="col-md-6 col-lg-6 col-sm-12" data-aos="fade-down-left">
+								<div className="contactcard sdo">
+									<p className="contactcard-title text-center">Contact Address</p>
+									<hr />
+									<div className="contact-icon m-3 ">
+										<p className="small-desc"><i className="fa fa-map-marker mr-2"></i>
+											AT-Borle, Tal-Jamkhed, Dist-Ahmednagar Pin-413201
+										</p>
+									</div>
+
+									<div className="small-desc m-3">
+										<div className="contact-icon">
+											<p ><i className="fa fa-envelope mr-2"></i><a href="mailto:chavansandip7499@gmail.com" className='atext' >chavansandip7499@gmail.com</a></p>
 										</div>
-										<div className="single-contact">
-											<div className="contact-icon">
-											  <i className="fa fa-envelope"></i>
-											</div>
-											<p><a href="#">@Example@gmail.com</a></p>
-											<p><a href="#">@Example@gmail.com</a></p>
+
+									</div>
+									<div className="small-desc m-3">
+										<div className="small-desc">
+											<p><i className="fa fa-phone mr-2 "></i><a className='atext' href="https://wa.me/7499743836">+917499743836</a></p>
+
 										</div>
-										<div className="single-contact">
-											<div className="contact-icon">
-											  <i className="fa fa-phone"></i>
-											</div>
-											<p><a href="#">+ (00) 125 456 789</a></p>
-											<p><a href="#">+ (00) 125 344 789</a></p>
-										</div>
-									</div>								
-								</div>	
+									</div>
+									<div className="go-corner">
+										<div className="go-arrow">→</div>
+									</div>
+									<div className="navsocial-icons  ">
+										<a href="https://www.linkedin.com/in/chavan-sandip-uddhav" className="mr-3" target="_blank" rel="noopener noreferrer">
+											<button className="LinkedinBtn">
+												<i className="fa fa-linkedin fa"></i>
+												<span className="BG"></span>
+											</button>
+										</a>
+										<a href="https://www.instagram.com/sandip_chavan3" className="mr-3" target="_blank" rel="noopener noreferrer">
+											<button className="LinkedinBtn">
+												<i className="fa fa-instagram fa"></i>
+												<span className="BG"></span>
+											</button>
+										</a>
+										<a href="https://wa.me/7499743836" target="_blank" className="mr-3" rel="noopener noreferrer">
+											<button className="LinkedinBtn">
+												<i className="fa fa-whatsapp fa"></i>
+												<span className="BG"></span>
+											</button>
+										</a>
+										<a href="https://github.com/chavansandip74" target="_blank" rel="noopener noreferrer">
+											<button className="LinkedinBtn">
+												<i className="fa fa-github fa"></i>
+												<span className="BG"></span>
+											</button>
+										</a>
+									</div>
+
+								</div>
 							</div>
+
 						</div>
 					</div>
-				</div>   
+				</div>
 			</section>
-    </div>
-  )
+		</div>
+	)
 }

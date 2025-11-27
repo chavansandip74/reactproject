@@ -1,0 +1,135 @@
+.herobtn {
+    --width: 200px;
+    --height: 35px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: #e79121;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Arial";
+    transition: background 0.3s;
+    margin-top: 5px;
+  }
+  
+  .herobtn::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: var(--tooltip-color);
+    font-size: 0.9rem;
+    color: #111;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+  }
+  
+  .herobtn::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: var(--tooltip-color);
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  }
+  
+  .herobtn::after,.herobtn::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .herobtn-wrapper,.text{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #0a0a0a;
+  }
+  
+  .text {
+    top: 0
+  }
+  
+  /* .text,.icon {
+    transition: top 0.5s;
+  } */
+  
+  /* .icon {
+    color: #181313;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  
+  /* .icon svg {
+    width: 24px;
+    height: 24px;
+  } */
+  
+  .herobtn:hover {
+    background: #95afb1;
+    color: #0a0a0a;
+    font-weight: bolder;
+  }
+  
+  .herobtn:hover .text {
+    top: -100%;
+  }
+  
+  .herobtn:hover .icon {
+    top: 0;
+  }
+  
+  .herobtn:hover:before,.herobtn:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .herobtn:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+  }
+  
+  .herobtn:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  }
+  .bgcolor{
+    background-color: #e79121;
+  }
+  .namecolor{
+    color: #e79121;
+
+  }
+  .banner_content h2 {
+    color: #d68e08;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.coloror:hover{
+  color: #d68e08;
+}
+.coloror{
+  color: #0a0a0a;
+  font-size: smaller;
+}
+.sdo{
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+
+}

@@ -1,0 +1,35 @@
+.servicebtn  {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ec7b11;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #f17610;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #c1835a;
+  }
+  
+  .servicebtn:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #ee7a0d;
+  }
+  
+  .servicebtn:active {
+    transform: scale(0.9);
+  }
+.blog-image {
+  width: 100%;          /* Ensure the image takes the full width of the card */
+  height: auto;         /* Maintain the aspect ratio */
+  object-fit: cover;    /* Ensure the image covers the card area */
+  border-radius: 8px;   /* Optional: Add some rounding to the image corners */
+  max-height: 250px;    /* Optional: Set a max height to control vertical size */
+  display: block;       /* Ensure the image is block level */
+}
+

@@ -1,0 +1,155 @@
+.hide-info-bar .info-bar {
+    transition: all 0.6s ease-in-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+ 
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar styling when scrolling */
+.fixed-top {
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+/* When scrolled, shrink navbar and change background */
+.scrolled-navbar {
+  background-color: #fff !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0 !important;
+}
+
+/* Default navbar style */
+
+/* Hide info bar smoothly */
+
+
+/* Social icons styling */
+.navsocial-icons a {
+  color: #333;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.navsocial-icons a:hover {
+  color: #d37a15;
+}
+
+/* Navbar links style */
+.navbar-nav .nav-link {
+  color: #000;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e99c0d;
+}
+.mfont{
+  font-size: 30px;
+  font-style: normal;
+  font-family:serif;
+}
+.nav-link-:hover{
+  color:#e99c0d !important;
+}
+.navimg {
+  width: 130px;
+  height: 40px;
+  margin: 0;
+  filter: brightness(0) saturate(100%) invert(70%) sepia(50%) saturate(7486%) hue-rotate(353deg) brightness(90%) contrast(108%);
+}
+
+/* From Uiverse.io by mRcOol7 */ 
+.LinkedinBtn {
+  width: 20px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.LinkedinBtn .svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  letter-spacing: 1px; /* Adjusted letter spacing */
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.LinkedinBtn .BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #f89809;
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.LinkedinBtn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box shadow effect */
+}
+
+.LinkedinBtn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.LinkedinBtn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+}
+
+.navsocial-icons{
+  display: flex;
+  flex-direction: row;
+}
+/* Add this to your navbar.css */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem; /* Adjust padding for mobile */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: flex-start; /* Align to the start */
+  }
+
+  .nav-link {
+    padding: 0.5rem 0; /* Space between links */
+    width: 100%; /* Full width for better touch targets */
+    text-align: left; /* Align text to the left */
+  }
+
+  .navbar-toggler {
+    margin-left: auto; /* Align the toggler button to the right */
+  }
+
+  .info-bar {
+    display: none; /* Optionally hide info bar on mobile */
+  }
+
+  .social-icons {
+    justify-content: space-between; /* Space out social icons */
+  }
+}
+
+
